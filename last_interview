@@ -1,0 +1,111 @@
+Questions
+
+1) Difference between proc and lambda
+	Procs are the fist-class objects (can be created, destroyes dynamically). Lambda similar to Proc (is' proc), but have several diffs:
+	1 - Proc check arguments count when called
+	2 - Proc return work like block return. but Lambda will just return from themself.
+
+2) Difference between `String` and `Symbol`
+	Symbol doesn't copying in memory. If you use :example in several places it will reference to the sam object
+
+3) Explain duck-typing
+	DYnamic lng without stron typing. In ruby case, that mean that object can be evetyrhing that you wann. Ruby hasa high reflection level, so you can change object on the fly. Here is working Duck rule. "If something quacks like duck and looking like duck, that mean it is duck."
+
+4) Write a function that sorts the keys in a hash by the length of the key as a string. For instance, the hash
+
+def sort_hsh_keys(i)
+	i.keys.map(&:to_s).sort_by &:length
+end
+
+5) Explain each of the following operators and how and when they should be used: ==, ===, eql?, equal?
+
+== - Checks if the value of two operands are equal (often overridden to provide a class-specific definition of equality).
+=== - Used in case^ it's like ~~~
+eql? the same like ==, but check type
+equal? check object id
+
+6) What will in output
+class Parent
+  @@var1 = "Parent 1"
+  @var2 = "Parent 2"
+  def self.vars
+    "var1: #{@@var1}, var2: #{@var2}"
+  end
+end
+   
+class Child < Parent
+  @@var1 = "Child 1"
+  @var2 = "Child 2"
+end
+
+puts Parent.vars
+puts Child.vars
+
+7) How does work Hash in ruby internally
+
+8) что значит refine и using
+
+
+10) What is the difference between Ruby’s Hash and ActiveSupport’s HashWithIndifferentAccess?
+HashWithIndifferentAccess[:kye] == HashWithIndifferentAccess['key']
+
+11) Can you tell me the three levels of method access control for classes and modules? What do they imply about the method?
+
+It works differently in langs. For ruby exists 3 type: public, protected, private.
+public - without restrictions
+protected - can call self and instances of the same class
+private - just through self
+
+12) What is CORS? How does it work?
+
+
+12.1) What is oding binding.pry (or binding.irb)?
+
+12.2) What return puts User.where("id > 0").class.to_s
+
+12.3) User.find(3)
+		User.find_by_id(3)
+
+12.4) Mention what is the command to create a migration?
+
+12.5) Explain what is Polymorphic Association in Ruby on Rails?
+
+13) How can you select all the even number records from a table? All the odd number records?
+
+select id from users where id % 2 = 0;
+select id from users where id % 2 != 0;
+
+13) Does Postgresql support unsigned ints, show example.
+
+CREATE DOMAIN uint2 AS int4
+   CHECK(VALUE >= 0 AND VALUE < 65536);
+
+17) Сможете перечилисть соритровки
+
+18) Назвать сложность каждой из них? https://habrahabr.ru/post/188010/
+
+19) Difference between let() and let!()
+
+20) If you test some service and you need record http reqeusts from your application, how do you make this? (VCR)
+
+21) 
+
+
+______
+
+
+    - подготовить структуру собеседования
+      - какое образование?
+      - какие последнии три проекта работал?
+      - расскажи про самый интересный проект, самое интересное тех решение?
+      - какие хоби, интересы?
+
+      - руби вопросы
+        - взять те, что есть + вопросы про апи
+      - база данных вопросы
+      - гит
+      - алгоритмы
+      - реакт
+        - что аткое реакт 
+        - зачем рендер
+        - чт отакое state props, зачем нужны

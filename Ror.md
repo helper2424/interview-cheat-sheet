@@ -49,7 +49,7 @@ o.method(:object_id).call
 
 7) Explain this ruby idiom: a ||= b
 
-a = b if b == false
+a = b if a == false
 
 8) What does self mean?
 
@@ -80,13 +80,23 @@ CONNECT - for estabilish tcp conenction ( for proxy)
 
 Multi-purpose Internet Mail Extension. System map documents and documents types. Consist of type and subtype with slash. text/html, image/png
 
+----
+Multipurpose Internet Mail Extension. It's way to identify content type. Has type and subtype: image/png, text/html
+
 13) Describe the key advantages of HTTP/2 as compared with HTTP 1.1.
+
+- binary
+- header compression
+- request multiplexing
+- push
 
 Http2 is a binaty protocol. It has term frames and work with sendings frmaes between client and server. We have less data, headers compressed. Push availability. Load page parallel.
 
 14) What is an ETag and how does it work?
 
-Is an tag added to resources om web server. If tag changed then server says 304 Not modified and client can use cache.
+Like hash calculated from file. When internal file changed. After first client save etag and send to server (If-None-Match: "686897696a7c876b7e"). If tag not changed server will response 304.
+
+Is an tag added to resources on web server. If tag changed then server says 304 Not modified and client can use cache.
 
 15) Explain the basic structure of a MIME multipart message when used to transfer different content type parts. Provide a simple example.
 
@@ -121,3 +131,142 @@ This is technique, when client send non stop requests to server (queed requests)
 
 18) Describe a Hash index and a BTree Index. What are some of their relative advantages and disadvantages?
  ? https://www.toptal.com/web#hiring-guide
+
+19) What is Rack?
+
+Rack is an api for work with web application server. Bridge API between web server and ruby frameworks
+
+To use Rack, provide an "app": an object that responds to the call method, taking the environment hash as a parameter, and returning an Array with three elements:
+
+The HTTP response code
+A Hash of headers
+The response body, which must respond to each
+
+20)Explain the Rack application interface
+
+It should have method call which receive env hash and return array with three elements: HTTP code,headers, response body ,which must response to each
+
+21) Write a simple Rack application
+
+run Proc.new { |env| ['200', {'Content-Type' => 'text/html'}, ['get rack\'d']] }
+
+22) How does Rack middleware works?
+
+23)
+  What is RubyGems? How does it work?
+How can you build your own Ruby gem?
+Explain the structure of a Ruby gem.
+Can you give me some examples of your favorite gems besides Ruby on Rails?
+
+RubyGems - is a software which allow easily manage ruby packages. You can install new packages by command gem install. And packages will be copied to special dir. .rvm/gems/gem_set/ with hash. THis directory added to $LOAD_PATH. So after this you can include package to your code by require method.
+
+To build your game you should create file soething.gemspec and build it with command `gem build`
+
+Favorite gems:
+  pry
+  rubocop
+  vcr
+  celluloid
+
+  optimized json
+  devise 
+  connection_pool
+  redis
+  rspec
+  webmock
+  database_cleaner 
+  timecop
+
+24) What is ActiveJob. 
+
+This is framework for running backgrund tasks. You can use it to handle some large tasks, tasks which might be delayed, tasks should run periodically. I don't use Activejib, worked just with sidekiq.
+
+25) What is Asset Pipeline?
+
+This is framework for preprocess assets for rails applicaiton. For example to minimize css and js. Or translate it from other languages, like coffescript, sass etc.
+
+26) What is a Rails engine?
+
+This is framework which allow separate rails functionality to separate bundles. Engine fully copy rails app structure
+
+27) Provide an example of RESTful routing and controller.
+
+resource :some
+
+class TestController < ApplicationController
+  def index end
+  def update end
+  def create end
+  def destroy end
+  def show end
+
+  def edit end
+  def new end
+end
+
+28) Describe CRUD verbs and actions.
+
+Create
+Read 
+Update
+Delete
+
+This is abbreviation. All applicaitons in essence make this 4 thisng with data.
+
+29) How test routes?
+
+Like any other intergration tests, use to_route
+
+30) How should you use filters in controllers?
+
+Filters in Ror is methods which you can call like chain before and after action calls. 
+example
+
+class TestController < ApllicationController::Base
+  before_filter :test
+
+ALso it have after, around filters. If you wanna stop chain in before filter - call render or redirect
+
+31) What are Strong Parameters?
+
+This is technique when you mark input params aa require or permitted and pass to mass update, or create methods.
+
+32) What do we need to test in controllers?
+
+Rspec and methods get, post, put, etc. and see what returned in response.
+
+33) How should you use content_for and yield?
+content_for is a method for attaching markup block to label and use it after.
+
+content_for :test do
+  <div/>
+  end
+
+yield :test
+
+34) How should you use nested layouts?
+
+You can redeclare some content_for labels and render one layout inside other.
+
+<%= render template :test %>
+
+35) Explain the Active Record pattern.
+
+
+36) Describe Active Record conventions
+
+Tables called like plural forms of modek names. 
+primary keys by default - id
+foreight_key - attribute _ id
+
+created_at
+updated_at
+lock_version
+type
+association_type
+
+37) Explain the Migrations mechanism.
+
+38) Explain the difference between optimistic and pessimistic locking.
+
+39) ASsociations and them examples

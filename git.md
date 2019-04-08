@@ -1,19 +1,17 @@
-1)What is the difference between the WHERE and HAVING clauses?
+1) Как создать проект
+git init
 
-Where caluse check condition for every row (or part if we use indexes). Having clauses used for aggregated records.
+2) Как изменить последний комментарий
+git rebase
+git commit --amend
 
-2) What is the difference between the RANK() and DENSE_RANK() functions? Provide an example.
+3) Отличия GitFlow, Githybflow, Gutlab flow
+в TT - GHFlow
 
-The only difference between the RANK() and DENSE_RANK() functions is in cases where there is a “tie”; i.e., in cases where multiple values in a set have the same ranking. In such cases, RANK() will assign non-consecutive “ranks” to the values in the set (resulting in gaps between the integer ranking values when there is a tie), whereas DENSE_RANK() will assign consecutive ranks to the values in the set (so there will be no gaps between the integer ranking values in the case of a tie).
+В GitFlow у вас есть дополнительная ветвь develop куда сливаются все разрабатываемые в текущий момент ветви. develop необходимо "стабилизировать" перед релизом, что часто приводит либо к переносу релиза, либо "релизу с замечаниями".
 
-Dense rank not skip values
 
-3) What are the NVL and the NVL2 functions in SQL? How do they differ?
+В чём отличие от GitLab Flow?
 
-Both the NVL(exp1, exp2) and NVL2(exp1, exp2, exp3) functions check the value exp1 to see if it is null.
+В GitLab Flow вы сначала вливаете ветвь в основной ствол и лишь потом разворачиваете в тестовом, боевом и других окружениях. Если релиз окажется проблемным и его потребуется откатить, то потребуется порой весьма проблемный "reverse merge" либо "стабилизация" ствола, как в случае GitFlow.
 
-With the NVL(exp1, exp2) function, if exp1 is not null, then the value of exp1 is returned; otherwise, the value of exp2 is returned, but case to the same data type as that of exp1.
-
-With the NVL2(exp1, exp2, exp3) function, if exp1 is not null, then exp2 is returned; otherwise, the value of exp3 is returned.
-
-4) 
