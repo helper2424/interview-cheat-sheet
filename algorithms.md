@@ -97,7 +97,7 @@ fun isPrimeFermats(input: Int):Boolean {
 }
 
 12) Describe Diffie-Hellman protocol:
-The main idea is to have two keys for every member, private and public. You could send a public key through unsecured data channels. After this the process is the following: a respondent receives your public key, encrypt message through it and send to you. You could decrypt this message only through your private key. 
+The main idea is public process of generating K for encryption/descryption but third side doesn't know about it.
 
 p, g  - public
 The original algorithm is about generating the common secret key by the idea
@@ -109,3 +109,20 @@ The same could be with third users: g^abc
 Also, DF could be used for encryption. The algorithm with open keys:
 p, g, A are published before. Another partner takes it, generate the message with K and send it with B. So, the key is K, but public certificates:
 p, g, A and p, g, B. private date are a and b. Encryption key - K
+
+13) RSA
+The main idea is to have two keys for every member, private and public. You could send a public key through unsecured data channels. After this the process is the following: a respondent receives your public key, encrypt message through it and send to you. You could decrypt this message only through your private key. 
+
+The same idea like DF but another principle. For encryption is used seans key (temproray key for session) which is generated on one side, encrypted with public key of opponent, snd sent to him. He receive it, decrypt and send the message encrypted by session key.
+
+How to generate public/private key:
+take two prime numbers, p, q. Generate n = p * q
+takes e. and generate d = e ^ -1 mod f(n).
+f(n) = (p-1)(q-1)
+
+d, n - private
+e, n - public
+
+m - message. 
+E(m) = m ^e mod n
+D(E(m)) = E(m) ^ d mod n
