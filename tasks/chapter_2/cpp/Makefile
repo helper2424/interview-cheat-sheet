@@ -1,4 +1,4 @@
-builds/chapter2: Chapter2Test.h Chapter2Tasks.hpp Node.h
+builds/chapter2: Chapter2Test.h Node.h
 	mkdir -p builds
 	cxxtestgen --error-printer -o builds/Chapter2Test.cpp Chapter2Test.h Node.h
 	g++  -ggdb -std=c++11 -o builds/chapter2 builds/Chapter2Test.cpp
