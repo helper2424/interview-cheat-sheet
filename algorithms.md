@@ -126,3 +126,74 @@ e, n - public
 m - message. 
 E(m) = m ^e mod n
 D(E(m)) = E(m) ^ d mod n
+
+14) The task 
+#  [(1, 10, 2), (1, 3, 1), ...]
+#
+#
+#
+
+def range(participations)
+    days = {}
+    participants.each do |p|
+        (p[0]...p[1]).each do |d|
+            days[d] = 0 unless days[d]
+            days += p[2]
+        end
+    end
+    
+    max = days.first
+    max_indexes = []
+    
+    days.each_with_index do |i, v| 
+        if v > max 
+            max_indexes = [i]
+            max = v
+        elsif v == max
+            max_indexes << i 
+        end
+    end
+    
+    return max_indexes
+end
+
+
+# ____1__1__-1__+2___-1____-2_
+def max_p2(participations)
+    events = []
+    
+    participants.each do |p|
+        events << [p[0], p[2]]
+        events << [p[1], -p[2]]
+    end
+    
+    events.sort { |a, b| a[0] <=> b[0] }
+    
+    max_intervals = []
+    current = 0
+    max = 0
+    prev_max = false
+    
+    events.each do |e| 
+        day = e[0]
+        diff = e[1]
+        current += diff
+        
+        if current > max
+            prev_max = true
+            max = current
+            max_intervals = []
+            max_intervals << [day, day]
+        elsif current == max
+            prev_max = true
+            max_intervals << [day, day]
+        elsif current < max && prev_max
+            max_intervals.last.last = day
+            prev_max = false
+        end
+    end
+    
+    max_intervals
+end
+
+14) 
