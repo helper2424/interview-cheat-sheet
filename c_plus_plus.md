@@ -131,6 +131,7 @@ bool:1
 21) Как защитить объект от копирования?
 
 22) В чем разница между struct и class?
+class - по умолчанию приватные мемберы
 
 23) Для чего используется вызов throw без аргументов?
 
@@ -785,3 +786,11 @@ Compiled with:
 
 g++ question_vptr.cpp -m32 -std=c++11
 g++ question_vptr.cpp -std=c++11
+
+62) What is lvalue and rvalue?
+
+lvalue - locator value, it should an adrress, rvalue - is a opposite. So originally lvalue should on the left side of assignment. Currentl it's more complex bacause have cv-specified lvalues (const volatile) and immutalbe lavalues
+https://habr.com/ru/post/348198/
+
+63)
+(переписываю то, что у меня на шпорах к собеседованиям было, на каждый пункт один-два листа): auto, decltype; forward; explicit; noexcept; mutable; {deque, stack, queque, unordered_map} — выучил зачем-то все методы этих классов отсюда; перегруженные функции/перегрузка операторов; шаблонные классы/функции; всё о «виртуальности» в ООП (функции, классы, чисто виртуальные функции и пр); всё о конструкторах (конструктор копирования, делегирующий коструктор, перемещающий и пр); отключение копирования в классе; move() семантика, ссылки (lvalue, rvalue, xvalue, glvalue, prvalue); std::forward; исключения в деструкторе/конструкторе; где уместен try\catch; сопоставление хэш таблиц и map; static; defaul; override; mutable; reinterpret_cast; constexpr; volatile

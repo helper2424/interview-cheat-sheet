@@ -10,8 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8e65b24-7d92-4615-8cc2-00b8bbc970a5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/tasks/chapter_2/cpp/Chapter2Tasks.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks/chapter_2/cpp/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/tasks/chapter_2/cpp/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/cpp/Chapter2Test.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/cpp/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/queue_from_two_stacks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/sort_stack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/stack_with_min.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/stacks_from_array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/tests/test_queue_from_two_stacks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/tests/test_sort_stack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/tests/test_stack_with_min.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/tests/test_stacks_from_array.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/tests/test_towers_of_hanoi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks/chapter_3/towers_of_hanoi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c_plus_plus.md" beforeDir="false" afterPath="$PROJECT_DIR$/c_plus_plus.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python.md" beforeDir="false" afterPath="$PROJECT_DIR$/python.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,37 +40,63 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_check_polyndrom_TestChechPolyndrom.coverage" NAME="Unittests for test_check_polyndrom.TestChechPolyndrom Coverage Results" MODIFIED="1558978739347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2/tests" />
-    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_job_book_sum_polynoms_TestSum_polynoms.coverage" NAME="Unittests for test_job_book_sum_polynoms.TestSum_polynoms Coverage Results" MODIFIED="1558343899710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_towers_of_hanoi_TestTowersOfHanoi.coverage" NAME="Unittests for test_towers_of_hanoi.TestTowersOfHanoi Coverage Results" MODIFIED="1562872365492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_3" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$bench_rotate_matrix.coverage" NAME="bench_rotate_matrix Coverage Results" MODIFIED="1558520546521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks" />
-    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_check_count_symbols_equal_one_TestCheckCOuntSymbolsEqualOne_test_check_one_symbol.coverage" NAME="Unittests for test_check_count_symbols_equal_one.TestCheckCOuntSymbolsEqualOne.test_check_one_symbol Coverage Results" MODIFIED="1558344124168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_stack_with_min_TestStackWithMin.coverage" NAME="Unittests for test_stack_with_min.TestStackWithMin Coverage Results" MODIFIED="1562872348410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_3" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_check_count_symbols_equal_one_TestCheckCOuntSymbolsEqualOne2.coverage" NAME="Unittests for test_check_count_symbols_equal_one.TestCheckCOuntSymbolsEqualOne2 Coverage Results" MODIFIED="1558348232968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_rotate_matrix_TestRotate_matrix.coverage" NAME="Unittests for test_rotate_matrix.TestRotate_matrix Coverage Results" MODIFIED="1558519667935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_looped_string_TestReplace.coverage" NAME="Unittests for test_looped_string.TestReplace Coverage Results" MODIFIED="1558531132887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks" />
-    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_is_permutation_TestIsPermutation.coverage" NAME="Unittests for test_is_permutation.TestIsPermutation Coverage Results" MODIFIED="1558376105473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks" />
-    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_remove_from_middle_TestRemoveDuplicates.coverage" NAME="Unittests for test_remove_from_middle.TestRemoveDuplicates Coverage Results" MODIFIED="1558902130835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_towers_of_hanoi_TestTowersOfHanoi_test_2_item.coverage" NAME="Unittests for test_towers_of_hanoi.TestTowersOfHanoi.test_2_item Coverage Results" MODIFIED="1562872509528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_3" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_check_count_symbols_equal_one_TestCheckCOuntSymbolsEqualOne.coverage" NAME="Unittests for test_check_count_symbols_equal_one.TestCheckCOuntSymbolsEqualOne Coverage Results" MODIFIED="1558344269348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_sum_polynoms_TestSum_polynoms.coverage" NAME="Unittests for test_sum_polynoms.TestSum_polynoms Coverage Results" MODIFIED="1557918806733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/tests" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_reverse_string_TestReverseString.coverage" NAME="Unittests for test_reverse_string.TestReverseString Coverage Results" MODIFIED="1558354430001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_partial_sort_TestRemoveDuplicates.coverage" NAME="Unittests for test_partial_sort.TestRemoveDuplicates Coverage Results" MODIFIED="1558909185607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2" />
-    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_remove_duplicates_TestRemoveDuplicates_test_remove_duplicates_without_buffer.coverage" NAME="Unittests for test_remove_duplicates.TestRemoveDuplicates.test_remove_duplicates_without_buffer Coverage Results" MODIFIED="1558898872165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2" />
-    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_remove_duplicates_TestRemoveDuplicates.coverage" NAME="Unittests for test_remove_duplicates.TestRemoveDuplicates Coverage Results" MODIFIED="1558898602259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_sort_stack_TestStackSort.coverage" NAME="Unittests for test_sort_stack.TestStackSort Coverage Results" MODIFIED="1563182647036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_3" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_queue_from_two_stacks_TestQueue2Stacks.coverage" NAME="Unittests for test_queue_from_two_stacks.TestQueue2Stacks Coverage Results" MODIFIED="1562923557439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_3" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_sort_stack_TestStackSort_test_order_items.coverage" NAME="Unittests for test_sort_stack.TestStackSort.test_order_items Coverage Results" MODIFIED="1563182644383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_3" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_sum_numbers_TestSumNumbers.coverage" NAME="Unittests for test_sum_numbers.TestSumNumbers Coverage Results" MODIFIED="1558909481484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2" />
-    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_compress_string_TestCompress_string.coverage" NAME="Unittests for test_compress_string.TestCompress_string Coverage Results" MODIFIED="1558700072079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_1" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_sum_numbers_TestSumNumbers_test_sum_forward_order.coverage" NAME="Unittests for test_sum_numbers.TestSumNumbers.test_sum_forward_order Coverage Results" MODIFIED="1558974383684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_replace_TestReplace.coverage" NAME="Unittests for test_replace.TestReplace Coverage Results" MODIFIED="1558376766379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_k_from_end_TestKFromEnd.coverage" NAME="Unittests for test_k_from_end.TestKFromEnd Coverage Results" MODIFIED="1558901470470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2" />
-    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_loop_start_TestSumNumbers.coverage" NAME="Unittests for test_loop_start.TestSumNumbers Coverage Results" MODIFIED="1558998963929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_cheat_matrix_TestReverseString.coverage" NAME="Unittests for test_cheat_matrix.TestReverseString Coverage Results" MODIFIED="1558531537458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_1" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_relevant_TestRotate_matrix.coverage" NAME="Unittests for test_relevant.TestRotate_matrix Coverage Results" MODIFIED="1558730891008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/yandex_champ" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_job_book_sum_polynoms_TestSum_polynoms.coverage" NAME="Unittests for test_job_book_sum_polynoms.TestSum_polynoms Coverage Results" MODIFIED="1558343899710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_check_count_symbols_equal_one_TestCheckCOuntSymbolsEqualOne_test_check_one_symbol.coverage" NAME="Unittests for test_check_count_symbols_equal_one.TestCheckCOuntSymbolsEqualOne.test_check_one_symbol Coverage Results" MODIFIED="1558344124168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_is_permutation_TestIsPermutation.coverage" NAME="Unittests for test_is_permutation.TestIsPermutation Coverage Results" MODIFIED="1558376105473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_remove_from_middle_TestRemoveDuplicates.coverage" NAME="Unittests for test_remove_from_middle.TestRemoveDuplicates Coverage Results" MODIFIED="1558902130835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_remove_duplicates_TestRemoveDuplicates_test_remove_duplicates_without_buffer.coverage" NAME="Unittests for test_remove_duplicates.TestRemoveDuplicates.test_remove_duplicates_without_buffer Coverage Results" MODIFIED="1558898872165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_remove_duplicates_TestRemoveDuplicates.coverage" NAME="Unittests for test_remove_duplicates.TestRemoveDuplicates Coverage Results" MODIFIED="1558898602259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_compress_string_TestCompress_string.coverage" NAME="Unittests for test_compress_string.TestCompress_string Coverage Results" MODIFIED="1558700072079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_1" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_loop_start_TestSumNumbers.coverage" NAME="Unittests for test_loop_start.TestSumNumbers Coverage Results" MODIFIED="1558998963929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_stacks_from_array_TestChechPalindrom.coverage" NAME="Unittests for test_stacks_from_array.TestChechPalindrom Coverage Results" MODIFIED="1562750427233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_3" />
+    <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_stacks_from_array_TestChechPalindrom_test_push_til_full_stack.coverage" NAME="Unittests for test_stacks_from_array.TestChechPalindrom.test_push_til_full_stack Coverage Results" MODIFIED="1560498968106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_3/tests" />
     <SUITE FILE_PATH="coverage/interview_cheat_sheet$Unittests_for_test_check_palindrom_TestChechPalindrom.coverage" NAME="Unittests for test_check_palindrom.TestChechPalindrom Coverage Results" MODIFIED="1558979301889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tasks/chapter_2" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/Makefile">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/chapter_3/stack_with_min.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="31" selection-start-column="31" selection-end-column="31" />
+            <state relative-caret-position="210">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/chapter_3/towers_of_hanoi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/chapter_3/sort_stack.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -65,63 +107,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/Chapter2Test.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2385">
+              <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/Node.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="238" selection-start-line="238" selection-end-line="238" />
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#236#245#0" expanded="true" />
-                <element signature="e#618#627#0" expanded="true" />
-                <element signature="e#705#714#0" expanded="true" />
-                <element signature="e#1043#1052#0" expanded="true" />
-                <element signature="e#1177#1186#0" expanded="true" />
-                <element signature="e#1374#1383#0" expanded="true" />
-                <element signature="e#1451#1460#0" expanded="true" />
-                <element signature="e#1726#1735#0" expanded="true" />
-                <element signature="e#1808#1817#0" expanded="true" />
-                <element signature="e#1926#1935#0" expanded="true" />
-                <element signature="e#2045#2054#0" expanded="true" />
-                <element signature="e#2270#2279#0" expanded="true" />
-                <element signature="e#2671#2680#0" expanded="true" />
-                <element signature="e#3207#3216#0" expanded="true" />
-                <element signature="e#3445#3454#0" expanded="true" />
-                <element signature="e#3666#3675#0" expanded="true" />
-                <element signature="e#4669#4678#0" expanded="true" />
-                <element signature="e#4742#4751#0" expanded="true" />
-                <element signature="e#5165#5174#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/Chapter2Test.h">
+        <entry file="file://$PROJECT_DIR$/tasks/chapter_3/tests/test_sort_stack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
+            <state relative-caret-position="120">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/chapter_1/cpp/tests/Chapter1Test.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/chapter_1/cpp/tests/Chapter1Test.h">
+        <entry file="file://$PROJECT_DIR$/tasks/chapter_3/tests/test_towers_of_hanoi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="15" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="15" />
+            <state relative-caret-position="315">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tasks/chapter_1/cpp/chapter1Tasks.hpp">
+        <entry file="file://$PROJECT_DIR$/tasks/chapter_3/tests/test_stack_with_min.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
+            <state relative-caret-position="360">
+              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tasks/chapter_2/tests/test_k_from_end.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="4" selection-start-line="4" selection-end-line="22" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -146,18 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tasks/tests/test_reverse_string.py" />
-        <option value="$PROJECT_DIR$/tasks/check_permutation.py" />
-        <option value="$PROJECT_DIR$/tasks/tests/test_is_permutation.py" />
-        <option value="$PROJECT_DIR$/tasks/replace_string.py" />
-        <option value="$PROJECT_DIR$/tasks/tests/test_replace.py" />
-        <option value="$PROJECT_DIR$/tasks/compress_string.py" />
-        <option value="$PROJECT_DIR$/tasks/tests/test_compress_string.py" />
-        <option value="$PROJECT_DIR$/tasks/test_rotate_matrix.py" />
-        <option value="$PROJECT_DIR$/tasks/tests/test_rotate_matrix.py" />
-        <option value="$PROJECT_DIR$/tasks/tests/bench_rotate_matrix.py" />
-        <option value="$PROJECT_DIR$/tasks/bench_rotate_matrix.py" />
-        <option value="$PROJECT_DIR$/tasks/rotate_matrix.py" />
         <option value="$PROJECT_DIR$/tasks/cheat_matrix_axes.py" />
         <option value="$PROJECT_DIR$/tasks/tests/test_cheat_matrix.py" />
         <option value="$PROJECT_DIR$/tasks/looped_string.py" />
@@ -197,20 +231,33 @@
         <option value="$PROJECT_DIR$/tasks/chapter_2/cpp/Node.h" />
         <option value="$PROJECT_DIR$/tasks/chapter_2/cpp/Chapter2Test.h" />
         <option value="$PROJECT_DIR$/tasks/chapter_2/cpp/Makefile" />
+        <option value="$PROJECT_DIR$/tasks/chapter_3/cpp/Chapter2Test.h" />
+        <option value="$PROJECT_DIR$/tasks/chapter_3/tests/test_stacks_from_array.py" />
+        <option value="$PROJECT_DIR$/tasks/chapter_3/stacks_from_array.py" />
+        <option value="$PROJECT_DIR$/tasks/chapter_3/stacks_with_min.py" />
+        <option value="$PROJECT_DIR$/tasks/chapter_3/stack_with_min.py" />
+        <option value="$PROJECT_DIR$/tasks/chapter_3/tests/test_stack_with_min.py" />
+        <option value="$PROJECT_DIR$/tasks/chapter_3/tests/test_towers_of_hanoi.py" />
+        <option value="$PROJECT_DIR$/tasks/chapter_3/towers_of_hanoi.py" />
+        <option value="$PROJECT_DIR$/tasks/chapter_3/queue_from_two_stacks.py" />
+        <option value="$PROJECT_DIR$/tasks/chapter_3/tests/test_queue_from_two_stacks.py" />
+        <option value="$PROJECT_DIR$/tasks/chapter_3/tests/test_sort_stack.py" />
+        <option value="$PROJECT_DIR$/tasks/chapter_3/sort_stack.py" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="976" />
+    <option name="height" value="978" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,6 +296,28 @@
               <item name="interview-cheat-sheet" type="462c0819:PsiDirectoryNode" />
               <item name="tasks" type="462c0819:PsiDirectoryNode" />
               <item name="chapter_2" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="builds" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter2.dSYM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interview-cheat-sheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interview-cheat-sheet" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_2" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interview-cheat-sheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interview-cheat-sheet" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interview-cheat-sheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interview-cheat-sheet" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter_3" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -264,11 +333,17 @@
               <item name="yandex_champ" type="462c0819:PsiDirectoryNode" />
               <item name="cpp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="interview-cheat-sheet" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interview-cheat-sheet" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="yandex_champ" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,22 +351,25 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Other File Types" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tasks/chapter_1" />
-      <recent name="$PROJECT_DIR$/tasks" />
-      <recent name="$PROJECT_DIR$/tasks/tests" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tasks/chapter_3/tests" />
+      <recent name="$PROJECT_DIR$/tasks/chapter_3" />
+      <recent name="$PROJECT_DIR$/tasks" />
       <recent name="$PROJECT_DIR$/tasks/chapter_2/cpp" />
       <recent name="$PROJECT_DIR$/tasks/chapter_2/tests" />
-      <recent name="$PROJECT_DIR$/tasks/chapter_2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tasks/chapter_1" />
       <recent name="$PROJECT_DIR$/tasks" />
       <recent name="$PROJECT_DIR$/tasks/tests" />
     </key>
@@ -308,7 +386,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_loop_start.TestSumNumbers">
+  <component name="RunManager" selected="Python tests.Unittests for test_sort_stack.TestStackSort">
     <configuration name="Unnamed" type="CLion_Remote" remoteCommand="" symbolFile="" sysroot="">
       <method v="2" />
     </configuration>
@@ -328,50 +406,19 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for tasks.chapter_2.tests.test_check_palindrom.TestChechPolyndrom" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_queue_from_two_stacks.TestQueue2Stacks" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="interview-cheat-sheet" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks/chapter_2/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tasks.chapter_2.tests.test_check_palindrom.TestChechPolyndrom&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_check_palindrom.TestChechPalindrom" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="interview-cheat-sheet" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks/chapter_2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks/chapter_3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_check_palindrom.TestChechPalindrom&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_loop_start.TestSumNumbers" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="interview-cheat-sheet" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks/chapter_2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_pattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_loop_start.TestSumNumbers&quot;" />
+      <option name="_new_target" value="&quot;test_queue_from_two_stacks.TestQueue2Stacks&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -391,35 +438,67 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_sum_numbers.TestSumNumbers" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_sort_stack.TestStackSort" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="interview-cheat-sheet" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks/chapter_2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks/chapter_3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_sum_numbers.TestSumNumbers&quot;" />
+      <option name="_new_target" value="&quot;test_sort_stack.TestStackSort&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_sum_numbers.TestSumNumbers.test_sum_forward_order" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_sort_stack.TestStackSort.test_order_items" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="interview-cheat-sheet" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks/chapter_2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks/chapter_3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_pattern" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_sum_numbers.TestSumNumbers.test_sum_forward_order&quot;" />
+      <option name="_new_target" value="&quot;test_sort_stack.TestStackSort.test_order_items&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_towers_of_hanoi.TestTowersOfHanoi" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="interview-cheat-sheet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks/chapter_3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_towers_of_hanoi.TestTowersOfHanoi&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_towers_of_hanoi.TestTowersOfHanoi.test_2_item" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="interview-cheat-sheet" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tasks/chapter_3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_towers_of_hanoi.TestTowersOfHanoi.test_2_item&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -443,20 +522,19 @@
       <item itemvalue="GDB Remote Debug.Unnamed" />
       <item itemvalue="Python tests.Unittests in tests" />
       <item itemvalue="Python tests.Unittests for tasks.chapter_1.tests.test_cheat_matrix.TestReverseString" />
+      <item itemvalue="Python tests.Unittests for test_queue_from_two_stacks.TestQueue2Stacks" />
       <item itemvalue="Python tests.Unittests for test_relevant.TestRotate_matrix" />
-      <item itemvalue="Python tests.Unittests for test_sum_numbers.TestSumNumbers" />
-      <item itemvalue="Python tests.Unittests for test_sum_numbers.TestSumNumbers.test_sum_forward_order" />
-      <item itemvalue="Python tests.Unittests for tasks.chapter_2.tests.test_check_palindrom.TestChechPolyndrom" />
-      <item itemvalue="Python tests.Unittests for test_check_palindrom.TestChechPalindrom" />
-      <item itemvalue="Python tests.Unittests for test_loop_start.TestSumNumbers" />
+      <item itemvalue="Python tests.Unittests for test_sort_stack.TestStackSort" />
+      <item itemvalue="Python tests.Unittests for test_sort_stack.TestStackSort.test_order_items" />
+      <item itemvalue="Python tests.Unittests for test_towers_of_hanoi.TestTowersOfHanoi" />
+      <item itemvalue="Python tests.Unittests for test_towers_of_hanoi.TestTowersOfHanoi.test_2_item" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for test_loop_start.TestSumNumbers" />
-        <item itemvalue="Python tests.Unittests for test_check_palindrom.TestChechPalindrom" />
-        <item itemvalue="Python tests.Unittests for tasks.chapter_2.tests.test_check_palindrom.TestChechPolyndrom" />
-        <item itemvalue="Python tests.Unittests for test_sum_numbers.TestSumNumbers.test_sum_forward_order" />
-        <item itemvalue="Python tests.Unittests for test_sum_numbers.TestSumNumbers" />
+        <item itemvalue="Python tests.Unittests for test_sort_stack.TestStackSort" />
+        <item itemvalue="Python tests.Unittests for test_sort_stack.TestStackSort.test_order_items" />
+        <item itemvalue="Python tests.Unittests for test_towers_of_hanoi.TestTowersOfHanoi.test_2_item" />
+        <item itemvalue="Python tests.Unittests for test_towers_of_hanoi.TestTowersOfHanoi" />
       </list>
     </recent_temporary>
   </component>
@@ -471,56 +549,61 @@
       <option name="presentableId" value="Default" />
       <updated>1557917862820</updated>
       <workItem from="1558812665788" duration="438000" />
-      <workItem from="1559036354995" duration="15263000" />
+      <workItem from="1559036354995" duration="15435000" />
+      <workItem from="1565530490915" duration="218000" />
+      <workItem from="1568310866740" duration="532000" />
+      <workItem from="1571742117441" duration="163000" />
+      <workItem from="1571873482496" duration="359000" />
+      <workItem from="1572165917264" duration="540000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_loop_start_TestSumNumbers - 2019.05.28 at 02h 13m 26s.xml">
-      <configuration name="Unittests for test_loop_start.TestSumNumbers" configurationId="tests" />
+    <history-entry file="Unittests_for_test_queue_from_two_stacks_TestQueue2Stacks - 2019.07.12 at 13h 25m 11s.xml">
+      <configuration name="Unittests for test_queue_from_two_stacks.TestQueue2Stacks" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_loop_start_TestSumNumbers - 2019.05.28 at 02h 13m 34s.xml">
-      <configuration name="Unittests for test_loop_start.TestSumNumbers" configurationId="tests" />
+    <history-entry file="Unittests_for_test_queue_from_two_stacks_TestQueue2Stacks - 2019.07.12 at 13h 25m 57s.xml">
+      <configuration name="Unittests for test_queue_from_two_stacks.TestQueue2Stacks" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_loop_start_TestSumNumbers - 2019.05.28 at 02h 13m 48s.xml">
-      <configuration name="Unittests for test_loop_start.TestSumNumbers" configurationId="tests" />
+    <history-entry file="Unittests_for_test_sort_stack_TestStackSort - 2019.07.15 at 13h 19m 55s.xml">
+      <configuration name="Unittests for test_sort_stack.TestStackSort" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_loop_start_TestSumNumbers - 2019.05.28 at 02h 13m 58s.xml">
-      <configuration name="Unittests for test_loop_start.TestSumNumbers" configurationId="tests" />
+    <history-entry file="Unittests_for_test_sort_stack_TestStackSort - 2019.07.15 at 13h 20m 04s.xml">
+      <configuration name="Unittests for test_sort_stack.TestStackSort" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_loop_start_TestSumNumbers - 2019.05.28 at 02h 14m 25s.xml">
-      <configuration name="Unittests for test_loop_start.TestSumNumbers" configurationId="tests" />
+    <history-entry file="Unittests_for_test_sort_stack_TestStackSort - 2019.07.15 at 13h 20m 20s.xml">
+      <configuration name="Unittests for test_sort_stack.TestStackSort" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_loop_start_TestSumNumbers - 2019.05.28 at 02h 14m 46s.xml">
-      <configuration name="Unittests for test_loop_start.TestSumNumbers" configurationId="tests" />
+    <history-entry file="Unittests_for_test_sort_stack_TestStackSort - 2019.07.15 at 13h 20m 31s.xml">
+      <configuration name="Unittests for test_sort_stack.TestStackSort" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_loop_start_TestSumNumbers - 2019.05.28 at 02h 15m 16s.xml">
-      <configuration name="Unittests for test_loop_start.TestSumNumbers" configurationId="tests" />
+    <history-entry file="Unittests_for_test_sort_stack_TestStackSort_test_order_items - 2019.07.15 at 13h 21m 15s.xml">
+      <configuration name="Unittests for test_sort_stack.TestStackSort.test_order_items" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_loop_start_TestSumNumbers - 2019.05.28 at 02h 15m 40s.xml">
-      <configuration name="Unittests for test_loop_start.TestSumNumbers" configurationId="tests" />
+    <history-entry file="Unittests_for_test_sort_stack_TestStackSort_test_order_items - 2019.07.15 at 13h 21m 26s.xml">
+      <configuration name="Unittests for test_sort_stack.TestStackSort.test_order_items" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_loop_start_TestSumNumbers - 2019.05.28 at 02h 15m 55s.xml">
-      <configuration name="Unittests for test_loop_start.TestSumNumbers" configurationId="tests" />
+    <history-entry file="Unittests_for_test_sort_stack_TestStackSort_test_order_items - 2019.07.15 at 13h 23m 03s.xml">
+      <configuration name="Unittests for test_sort_stack.TestStackSort.test_order_items" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_loop_start_TestSumNumbers - 2019.05.28 at 02h 16m 04s.xml">
-      <configuration name="Unittests for test_loop_start.TestSumNumbers" configurationId="tests" />
+    <history-entry file="Unittests_for_test_sort_stack_TestStackSort_test_order_items - 2019.07.15 at 13h 23m 04s.xml">
+      <configuration name="Unittests for test_sort_stack.TestStackSort.test_order_items" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15701000" />
+    <option name="totallyTimeSpent" value="17685000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="976" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="978" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25518927" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26984128" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32918552" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3292683" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39800444" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32853982" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3971239" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -576,6 +659,30 @@
           <line>22</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tasks/chapter_3/stacks_from_array.py</url>
+          <line>30</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tasks/chapter_3/tests/test_stack_with_min.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tasks/chapter_3/towers_of_hanoi.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tasks/chapter_3/tests/test_queue_from_two_stacks.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tasks/chapter_3/sort_stack.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -604,91 +711,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_1/tests/test_looped_string.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_1/job_book_sum_polynoms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_1/check_count_symbols_equal_one.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_1/tests/test_check_count_symbols_equal_one.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_1/tests/test_reverse_string.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="5" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_1/rotate_matrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/yandex_champ/tests/test_relevant.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_1/reverse_string.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_1/tests/test_replace.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_1/tests/test_compress_string.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/yandex_champ/build_relevant_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/yandex_champ/cpp/tests/Chapter1Test.cpp" />
-    <entry file="file://$PROJECT_DIR$/tasks/yandex_champ/cpp/tests/Chapter1Test.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/yandex_champ/cpp/chapter1Tasks.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
@@ -718,17 +740,13 @@
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/diff_tools.py" />
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/find_k_from_end.py" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/remove_element_from_middle.py" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/__init__.py" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/sum_numbers.py" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/list_partial_sorting.py" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/node.py" />
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/check_palindrom.py" />
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/find_loop_start.py" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/tests/test_sum_numbers.py" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/tests/test_check_palindrom.py" />
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/tests/test_k_from_end.py" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/tests/test_partial_sort.py" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/tests/test_remove_duplicates.py" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/tests/test_remove_from_middle.py">
@@ -790,68 +808,20 @@
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/Chapter2Test.cpp" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_1/cpp/chapter1Tasks.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="1920">
           <caret line="128" column="22" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/builds/Chapter2Test.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/test.cpp" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/Node.cpp" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_2/remove_duplicates_from_linked_list.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/Node.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="238" selection-start-line="238" selection-end-line="238" />
-          <folding>
-            <element signature="e#236#245#0" expanded="true" />
-            <element signature="e#618#627#0" expanded="true" />
-            <element signature="e#705#714#0" expanded="true" />
-            <element signature="e#1043#1052#0" expanded="true" />
-            <element signature="e#1177#1186#0" expanded="true" />
-            <element signature="e#1374#1383#0" expanded="true" />
-            <element signature="e#1451#1460#0" expanded="true" />
-            <element signature="e#1726#1735#0" expanded="true" />
-            <element signature="e#1808#1817#0" expanded="true" />
-            <element signature="e#1926#1935#0" expanded="true" />
-            <element signature="e#2045#2054#0" expanded="true" />
-            <element signature="e#2270#2279#0" expanded="true" />
-            <element signature="e#2671#2680#0" expanded="true" />
-            <element signature="e#3207#3216#0" expanded="true" />
-            <element signature="e#3445#3454#0" expanded="true" />
-            <element signature="e#3666#3675#0" expanded="true" />
-            <element signature="e#4669#4678#0" expanded="true" />
-            <element signature="e#4742#4751#0" expanded="true" />
-            <element signature="e#5165#5174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/Chapter2Test.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/chapter_1/cpp/tests/Chapter1Test.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/Chapter2Tasks.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
-          <folding>
-            <element signature="e#99#108#0" expanded="true" />
-            <element signature="e#184#193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/Chapter2Tasks.hpp" />
     <entry file="file://$PROJECT_DIR$/tasks/chapter_1/cpp/tests/Chapter1Test.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -863,6 +833,141 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_3/cpp/Makefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_3/cpp/Chapter2Test.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/yandex_champ/tests/test_relevant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_3/tests/test_stacks_from_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="54" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/find_loop_start.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/find_k_from_end.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/check_palindrom.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_3/stacks_from_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_3/queue_from_two_stacks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_3/tests/test_queue_from_two_stacks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_3/stack_with_min.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_3/towers_of_hanoi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_3/sort_stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/builds/Chapter2Test.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/Chapter2Test.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2385">
+          <caret line="159" column="8" selection-start-line="159" selection-start-column="8" selection-end-line="159" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_3/tests/test_sort_stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_3/tests/test_towers_of_hanoi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_3/tests/test_stack_with_min.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/tests/test_k_from_end.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="4" selection-start-line="4" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/chapter_2/cpp/Node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#236#245#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

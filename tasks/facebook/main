@@ -1,0 +1,672 @@
+How to prepare
+ - algos complexities  - https://habr.com/ru/post/188010/
+ https://www.facebookrecruiting.com/portal/interview_prep_hub - main site
+ https://www.codinginterview.com/facebook - gayli 
+ https://www.facebook.com/careers/life/interview_prep_video/?token=fsRxpdxBcYLRRh5Ih9FXX71tGfEJAFEXCuPrxJozp8VcEacIhqq3FqSUnICINJlg&id=970824202984918 - interview example
+ - https://vimeo.com/157480836 - gayle how to pass interviews presentation
+ - 	https://vimeo.com/158532188 - example fo solving task
+
+question for interviewers
+	- what don't like in fb
+	- why do people leave
+	- what is time to live
+	- what projects you think interesting?
+
+Theroy
+	- Bloom filter
+	The probabilistic filter used for checking that elemnt exists in the array. The idea:
+	- array with m bits
+	- m hash functions which return 0/1
+	- adding operation: go via all hash functions and setup the value in ith bit
+	- checking: go via all hash functions, check that all ith is 1. If so then probably element exists in the bit mask
+Plan to read
+	-https://leetcode.com/problemset/all/ - https://www.hackerrank.com/
+
+	- heap
+	- tries
+	- graphs
+	- de[th-frist search
+	- breadth-first search
+	- all sortings
+	- bloom filter
+
+	- задчаи
+		- move zeros to left
+			- go from the right side with two pointers - reader writer, writer rewrites everything, reader copy not nulls and sed to writer
+		- merge overlapping intervals
+			- go from first to the end, if second item beginning less than current end - add this interval, if thus end bigger current end  - replace current end
+		- merge soterd lsts
+			- choose the initial lst for mergeing
+			- go step by step and chose smallest item and move to initial list
+		- Reverse words in a sentence
+			- write reverse method
+			- reversr string
+			- reverse string between spaces
+		- segment string with dictionary	
+			- check that first word exists in dict and recursively call the same method for remainder
+		- Find Maximum Single Sell Profit
+			- iterate over array and calcuate global profit and current profit
+			- increase sell if currentprofit > global - uupdate global and sell point
+			- if current arr[i] < current_buy - update it
+			- the result - sell and global profit - sell
+		- power of integer
+			- go via exponent of 2 of n and multiply result to squred base every time
+		- generate number of subsets of set
+			- amount of subsets = 2^k (we check k times do we include number or not)
+			- the solution - go via range 0 to 2^k and use i as a bit mask for inserting data to result set
+		- find element or left border or right border of elements equal to required
+			- use binary search with trickly conditions for next elemtn should equal required
+				def get_middle_index(left_border, right_border):
+				  if left_border == right_border:
+				    return left_border
+
+				  return int(left_border + (right_border - left_border) * 0.5) + 1
+		- find element in sorted roted array
+			- binary search with additional conditions for cases when we need to decide way depends on position of rotation pointers
+		- balanced brackets  - stack with conditions
+		- 
+
+ Tasks
+ 1. Given an integer array, move all elements that are equal to 0 to the left while maintaining the order of other elements in the array.
+ 	start feeling rary from the right side
+
+ 	def move_seroz_left(arr):
+	  zero_counts = 0
+	  index = len(arr) - 1
+	  for i in range(len(arr)-1, -1, -1):
+	    if arr[i] == 0:
+	      zero_counts += 1
+	    else:
+	      arr[index] = arr[i]
+	      index -= 1
+
+	  for i in range(zero_counts - 1, -1, -1):
+	    arr[i] = 0
+
+
+	  return arr
+2. Given a list of intervals, merge all the overlapping intervals to produce a list that has only mutually exclusive intervals.			
+- merge overlapping intervals
+- go from first to the end, if second item beginning less than current end - add this interval, if thus end bigger current end  - replace current end
+
+3. merge soterd lsts
+	- choose the initial lst for mergeing
+	- go step by step and chose smallest item and move to initial list
+4. Reverse words in a sentence
+	- write reverse method
+	- reversr string
+	- reverse string between spaces
+5. segment string with dictionary	
+	- check that first word exists in dict and recursively call the same method for remainder
+6. Find Maximum Single Sell Profit
+	- iterate over array and calcuate global profit and current profit
+	- increase sell if currentprofit > global - uupdate global and sell point
+	- if current arr[i] < current_buy - update it
+	- the result - sell and global profit - sell
+7. power of integer
+	- go via exponent of 2 of n and multiply result to squred base every time
+8. generate number of subsets of set
+	- amount of subsets = 2^k (we check k times do we include number or not)
+	- the solution - go via range 0 to 2^k and use i as a bit mask for inserting data to result set
+9. find element or left border or right border of elements equal to required
+	- use binary search with trickly conditions for next elemtn should equal required
+		def get_middle_index(left_border, right_border):
+		  if left_border == right_border:
+		    return left_border
+
+10. Largest Triple Products
+	- Use Min Heap with 3 items
+
+	def findMaxProduct(arr):
+	  heap = []
+	  smallest = 0
+	  product = 1
+	  
+	  for i in range(len(arr)):
+	    if len(heap) < 3:
+	      product *= arr[i]
+	      heapq.heappush(heap, arr[i])     
+	    elif arr[i] > heap[0]:
+	      product /= heap[0]
+	      product *= arr[i]
+	      heapq.heapreplace(heap, arr[i]) 
+	    
+	    if i <= 1:
+	      arr[i] = -1
+	    else:
+	      arr[i] = product
+	        
+	  return arr
+
+11. Magical Candy Bags
+
+def maxCandies(arr, k):
+  heap = list(map(lambda x: x * -1, arr))
+  heapq.heapify(heap)
+  result = 0
+  
+  print(arr, k)
+  if len(arr) == 0:
+    return result
+  
+  for i in range(k):
+    result += heap[0] * -1
+    heapq.heapreplace(heap, math.ceil(heap[0] / 2))
+    print(result, heap, i)
+  
+  return result
+
+
+Create a heap and put elemtsn there. Go via the heap k times and make calculations.
+
+12. Stream Median 
+
+import heapq
+
+# Add any helper functions you may need here
+
+
+def findMedian(arr):
+  max_heap = []
+  min_heap = []
+    
+  for i in range(len(arr)):
+    if len(max_heap) == 0 or arr[i] > max_heap[0]:
+      heapq.heappush(max_heap, arr[i])
+    else:
+      heapq.heappush(min_heap, -1 * arr[i])
+        
+    diff = len(max_heap) - len(min_heap)
+    if diff > 1:
+      heapq.heappush(min_heap, -1 * heapq.heappop(max_heap))
+    elif diff < -1:
+      heapq.heappush(max_heap, -1 * heapq.heappop(min_heap))
+      
+    diff = len(max_heap) - len(min_heap)
+    
+    if diff == 0:
+      arr[i] = (max_heap[0] + -1 * min_heap[0]) // 2
+    elif diff == -1:
+      arr[i] = min_heap[0] * -1
+    else:
+      arr[i] = max_heap[0]
+        
+  return arr
+
+  Take two heaps insert items to them and calculate median for every index
+
+13. Contiguous Subarrays
+
+Write a methods which finds all Contiguous subaarrays.
+The idea is using staack which aggegates previosly calculated data.
+
+def count_subarrays(arr):
+  stack = []
+  result = [1] * len(arr)
+  stack = []
+  
+  for i in range(len(arr)):
+    while len(stack) > 0 and arr[stack[-1]] < arr[i]:
+      result[i] += result[stack.pop()]
+      
+    stack.append(i)
+    
+  stack = []
+  temp = [0] * len(arr)
+  
+  for i in range(len(arr) - 1, -1, -1):
+    while len(stack) > 0 and arr[stack[-1]] < arr[i]:
+      temp[i] += temp[stack.pop()]
+      
+    stack.append(i)
+    result[i] += temp[i]
+    temp[i] += 1
+    
+  return result
+  14. Sortings
+
+  import random
+
+def merge_sort(arr):
+    size = len(arr)
+
+    if size < 2:
+        return arr
+
+    temp = [None] * size
+
+    _merge_sort(arr, 0, size - 1, temp)
+    return arr
+
+def _merge_sort(arr, left, right, temp):
+    if right <= left:
+        return
+
+    middle = (left + right) // 2
+
+    _merge_sort(arr, left, middle, temp)
+    _merge_sort(arr, middle + 1, right, temp)
+
+    index = left
+
+    l_ref = left
+    r_ref = middle + 1
+    while l_ref <= middle or r_ref <= right:
+      if r_ref > right or (l_ref <= middle and arr[l_ref] < arr[r_ref]) :
+          temp[index] = arr[l_ref]
+          l_ref += 1
+      else:
+          temp[index] = arr[r_ref]
+          r_ref += 1
+      index += 1
+
+    for i in range(left, right + 1):
+        arr[i] = temp[i]
+
+def quick_sort(arr):
+    if len(arr) == 0:
+        return arr
+
+    _quick_sort(arr, 0, len(arr) - 1)
+
+    return arr
+
+def swap(arr, i, j):
+    arr[i], arr[j] = arr[j], arr[i]
+
+def _quick_sort(arr, left, right):
+    if left >= right:
+        return
+
+    middle = arr[(left + right) // 2  + 1] # better to choose random
+
+    l_ref = left
+    r_ref = right
+
+    while l_ref < r_ref:
+        while l_ref < right and arr[l_ref] < middle:
+            l_ref += 1
+
+        while r_ref > left and arr[r_ref] > middle:
+            r_ref -= 1
+
+        if l_ref < r_ref:
+            swap(arr, l_ref, r_ref)
+            l_ref += 1
+            r_ref -= 1
+
+    _quick_sort(arr, left, l_ref - 1)
+    _quick_sort(arr, r_ref + 1, right)
+
+test_suites = [
+    [[], []],
+	[[1, 2], [1, 2]],
+	[[1, 3, 2], [1, 2, 3]],
+	[[1 ,1 ,1 ,1 ], [1 , 1, 1, 1]],
+	[[10, 9, 8, 7, 6, 6, 6,6, 5 ,4 ,3 ,2 ,1], [1, 2, 3, 4, 5, 6, 6, 6, 6, 7, 8, 9, 10]],
+	[[3,2,1], [1,2,3]],
+]
+
+method = quick_sort
+for i in test_suites:
+    assert method(i[0]) == i[1]
+
+method = merge_sort
+for i in test_suites:
+    assert method(i[0]) == i[1]
+
+ 14. Heap sort
+def heap_sort(arr):
+    for i in range(len(arr) // 2, -1, -1):
+        heapify(arr, i, len(arr))
+
+    right_index = len(arr) - 1
+
+    while right_index > 0:
+        swap(arr, 0, right_index)
+        heapify(arr, 0, right_index)
+        right_index -= 1
+
+    return arr
+
+def heapify(arr, i, border):
+    largest = i
+    l = i * 2
+    r = l + 1
+
+    if l < border and arr[largest] < arr[l]:
+        largest = l
+
+    if r < border and arr[largest] < arr[r]:
+        largest = r
+
+    if largest != i:
+        swap(arr, i, largest)
+        heapify(arr, largest, border)
+
+ Heapify method take the root and find the biggest element between root, left child, and right child, replace biggest with root and recursively do the same with left or right. Heap sort 
+ - applies heapify for all elements begin from the middle to the start, 
+ - split array to two parts, sorted and heap
+ - move one element from top of heap to the begining of sorted and do heapify of first element of heap
+
+ 15. COunt amount of zeros in factorial
+ Count numbers who could be dividede to 5, + 25 + 125
+
+
+16. Queue removal
+
+- Iterate x times and
+- eery itertaion find maximum and decreament all oter values
+- maximum push ro result
+- removed elements replace with -1
+
+def findPositions(arr, x):
+  size = len(arr)
+  result = []
+  index = 0
+
+  current_size = size
+  for i in range(x):
+    iterated_items = 1
+    biggest = index
+    biggest_val = arr[biggest]
+        
+    while iterated_items <= x and iterated_items <= current_size:
+      if arr[index] < 0:
+        index = inc_index(index, size)
+        continue
+        
+      if arr[index] > biggest_val:
+        biggest = index
+        biggest_val = arr[biggest]
+      arr[index] -= 1
+        
+      if arr[index] < 0:
+        arr[index] = 0
+        
+      index = inc_index(index, size)
+      iterated_items += 1
+              
+    current_size -= 1
+    result.append(biggest + 1)
+    arr[biggest] = -1
+  return result
+
+17. Billion users growth
+- The solution is binary search + approximate calculation of start and end. We can use highest and lowest border by calculating. 
+
+def startEndApproximation(growthRates):
+  biggest_i = 0
+  
+  for i in growthRates:
+    if i > biggest_i:
+      biggest_i = i
+      
+  start = math.floor(math.log(1000000000 / 1000, 2))
+  end = math.ceil(math.log(1000000000, biggest_i))
+  return (start, end)
+  
+def getDaysFor(growthRates, day):
+  result = 0
+  
+  bigger_1b = False
+  
+  for i in growthRates:
+    result += i ** day
+    
+    if result > 1000000000:
+      if bigger_1b:
+        return -1
+      
+      bigger_1b = True
+  
+  if result < 1000000000:
+    return 1
+  
+  return -1
+
+
+def getBillionUsersDay(growthRates):
+  start, end = startEndApproximation(growthRates)
+    
+  while start < end:
+    print(start, end)
+    middle = (start + end) // 2
+      
+    search_to = getDaysFor(growthRates, middle)
+    
+    if search_to < 0:
+      end = middle
+    else:
+      start = middle + 1
+    
+  return int(middle + 1)
+    
+18. Nodes in a Subtree
+
+Конвертим дерево в масси массивов - строка это число, а стобцы - сколько за этим числом букв стоит. КОнвертируем дерево в этот массив и поучаем ответ за o(1)
+
+19.
+Find lexigraphically smallest array. Have restrcition with k swaps.
+
+The solution while k > 0 get smallest position and move it to the begiining to smallest position which is possible. 
+
+def findMinArray(arr, k):
+  new_index = 0
+  
+
+  while k > 0:
+    smallest_i = new_index
+    for i in range(new_index + 1, min(new_index + k + 1, len(arr))):
+      if arr[i] < arr[smallest_i]:
+        smallest_i = i
+      
+    diff = smallest_i - new_index
+    if diff > k:
+      new_index = smallest_i - k
+      k = 0
+    else:
+      k -= diff
+      
+    tmp = arr[smallest_i]
+    for i in range(smallest_i, new_index, -1):
+      arr[i] = arr[i - 1]
+    arr[new_index] = tmp
+    new_index += 1
+      
+  return arr
+
+20. Seating Arrangements
+ 
+ There are n guests attending a dinner party, numbered from 1 to n. The ith guest has a height of arr[i] inches.
+The guests will sit down at a circular table which has n seats, numbered from 1 to n in clockwise order around the table. As the host, you will choose how to arrange the guests, one per seat. Note that there are n! possible permutations of seat assignments.
+Once the guests have sat down, the awkwardness between a pair of guests sitting in adjacent seats is defined as the absolute difference between their two heights. Note that, because the table is circular, seats 1 and n are considered to be adjacent to one another, and that there are therefore n pairs of adjacent guests.
+The overall awkwardness of the seating arrangement is then defined as the maximum awkwardness of any pair of adjacent guests. Determine the minimum possible overall awkwardness of any seating arrangement.
+
+
+The idea is sort array ad create another array, where we would put closests values together to minimize diff. We could avoid creating new array, we just need to calculate the diff with right neighbour.
+
+	def minOverallAwkwardness(arr):
+  arr.sort()  
+  max_diff = 0
+    
+  for i in range(len(arr)):
+    right_neighb_index = 0
+    
+    if i == 0:
+      right_neighb_index = 1    
+    elif i == 2:
+      right_neighb_index = 0      
+    elif i % 2 != 0:
+      right_neighb_index = i + 2
+      
+      if right_neighb_index > len(arr) - 1:
+        right_neighb_index = 2
+    else:
+      right_neighb_index = i - 2
+      
+    diff = abs(arr[i] - arr[right_neighb_index]) 
+
+    if diff > max_diff:
+      max_diff = diff
+
+  return max_diff
+
+21. Mathicng pairs
+
+calculate the mathic length
+if it equals to len, than check duplicates, if not exist - then len - 2
+calculate number of perfect matches
+calcualte number of partial matches
+
+the reuslt = mething legnth + 2 for perfect matches or + 1 for partial or + 0
+
+use dicts to check partial matches
+
+# Add any helper functions you may need here
+def symbolToIndex(symbol):
+  return ord(symbol) - ord('a')
+
+def matching_pairs(s, t):
+  symbols_dict = [0] * 26
+  unmatched_pairs = dict()
+  unmatched_s = [0] * 26
+  unmatched_t = [0] * 26
+  
+  has_duplicates = False
+  has_perfect_match = False
+  has_partial_match = False
+  
+  if len(s) > 26:
+    has_duplicates = True
+    
+  result = 0
+  for i in range(len(s)):
+    s_index = symbolToIndex(s[i])
+    t_index = symbolToIndex(t[i])
+    
+    if not has_duplicates:
+      if symbols_dict[s_index] == 0:
+        symbols_dict[s_index] = 1
+      else:
+        has_duplicates = True
+        
+    if s[i] == t[i]:
+      result += 1
+    else:
+      reverse = t_index * 100 + s_index
+      pair = s_index * 100 + t_index
+      
+      if not has_perfect_match:
+        if unmatched_pairs.get(reverse):
+          has_perfect_match = True
+        else:
+          unmatched_pairs[pair] = True
+
+      if not has_partial_match:
+        if unmatched_s[t_index] > 0 or unmatched_t[s_index] > 0:
+          has_partial_match = True
+        unmatched_s[s_index] = 1
+        unmatched_t[t_index] = 1
+  
+  if result == len(s):
+    if not has_duplicates:
+      result -= 2
+  else:
+    if has_perfect_match:
+      result += 2
+    elif has_partial_match:
+      result += 1
+    
+  return result
+
+22. Min Length subsctring
+
+The idea is to create a hash table from the second string. And go via first string with window of size at least t and check the length. We take two pointers: right and left. We are going right if window is small or solutoin doesnt exists and goes left if it exists. On every step we check the distance and return the biggest.
+
+def min_length_substring(s, t):
+  t_map = dict()
+  has_global_solution = False
+  result = len(s)
+  size_t = len(t)
+  cumulative_diff = 0
+  
+  for i in range(len(t)):
+    char = t[i]
+    if not t_map.get(char):
+      t_map[char] = [0, 0]
+      
+    t_map[char][0] += 1
+    cumulative_diff += 1
+    
+  left_border = 0
+  right_border = left_border
+    
+  while right_border <= len(s) - 1 and left_border <= len(s) - 1 - size_t:
+    if right_border < left_border + size_t or cumulative_diff > 0:
+      
+      new_element = s[right_border]
+      
+      t_item = t_map.get(new_element)
+      if t_item:
+        t_item[1] += 1
+        
+        if t_item[1] <= t_item[0]:
+          cumulative_diff -= 1
+          
+          if cumulative_diff == 0:
+            has_global_solution = True
+            new_diff = right_border - left_border + 1
+            
+            if new_diff < result:
+              result = new_diff
+      right_border += 1
+    else:
+      remove_element = s[left_border]
+      
+      t_item = t_map.get(new_element)
+      
+      if t_item:
+        t_item[1] -= 1
+        
+        if t_item[1] < t_item[0]:
+          cumulative_diff += 1
+          
+      elif cumulative_diff == 0:
+        new_diff = right_border - left_border
+        if new_diff < result:
+          result = new_diff    
+      left_border += 1 
+      
+  if not has_global_solution:
+    return -1
+  
+  return result
+
+23. 2 варианта игры, 1 бросок или 2 из трех. Вероятность попадения - p. 
+P(2) = p3 + 3p2(1-p)
+
+P(2) == P(1)
+
+p^3 + 3*p^2*(1-p) - p = 0
+
+p3 + 3p2 - 3p3 - p = 0
+-2p3 + 3p2 - p = 0
+
+-2p2 + 3p - 1 = 0
+p2 - 2p + 1 = 0
+(p - 1)^2 = 0
+
+p < 0.5 - первы враинат
+p > 0.5 - второй
+
+24. Муравью в вершинах треугольника, какова вернойтность что хотя бы два столкнуться
+
+P(направления) = 0.5
+
+P(collision) =  0.75
+Pn(coll) = 1 - 2/2^n = (2^n-1 - 1)/2^n -1 
+
+25. Найти к-ый элемент в ряде состоящем из 3, 5, 7.
+
+Идея в том что кждый новый элемент - это какойто предыдущий умноженный на 3 5 или 7. Поэтому мы созадем 3 очереди где храним в упорядоченном порядке новые числа и каждый раз вытаскиваем минимум, умноажем его на 3 числа и ложим заново. Надо только удалить дубликаты, так как 3 *5 == 5 * 3, т/е/ мы пропускаем часть значение при потоврной вставке

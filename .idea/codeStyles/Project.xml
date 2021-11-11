@@ -5,5 +5,8 @@
         <option name="USE_TAB_CHARACTER" value="true" />
       </value>
     </option>
+    <MarkdownNavigatorCodeStyleSettings>
+      <option name="RIGHT_MARGIN" value="72" />
+    </MarkdownNavigatorCodeStyleSettings>
   </code_scheme>
 </component>

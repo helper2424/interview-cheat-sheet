@@ -3,7 +3,7 @@
 ### Base level:
 1) Difference between proc and lambda
 	Procs are the fist-class objects (can be created, destroyes dynamically). Lambda similar to Proc (is' proc), but have several diffs:
-	1 - Proc check arguments count when called
+	1 - Proc doesnt check arguments count when called
 	2 - Proc return work like block return. but Lambda will just return from themself.
 2) Difference between `String` and `Symbol` ??? ( символы гарбедж коллектинг с версии 2.2.1)
 	Symbol doesn't copying in memory. If you use :example in several places it will reference to the sam object
@@ -293,7 +293,7 @@ Hook methods onRuby objects, like included, extended, method_missing, const_miss
 
 29) What is the difference between Proc and lambda?
 
-Proc and lambda are instances of Proc object. Proc check count of input params and work like block. Lambda doesn't check count of params and doesn't work like a block
+Proc and lambda are instances of Proc object. Proc doesnt check count of input params and work like block. Lambda doesn't check count of params and doesn't work like a block
 
 30) What difference between ==, equal?, eql? and ===
 
@@ -321,3 +321,20 @@ x.flat_map {|i| i.values }.reduce :+
 32) What is the difference between the Object methods clone and dup?
 
 dup create shallow copy, for example without incuded modules
+
+33) What is singleton class?
+
+This is a class which create when we define methods on objects, like
+
+
+```
+some_object.def new_method
+
+end
+
+```
+
+Or when we do extend - it creates a class in inheritance chain between our class and Class and put there all methods
+
+33) default ancestors: Object < Kernel < BasicObject
+
